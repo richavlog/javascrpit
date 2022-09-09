@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salary slip</title>
+
+</head>
+
+<body>
+    <script>
+        function sal() {
+            var x = parseInt(document.getElementById("b").value);
+            var ta = x * 15 / 100;
+            document.getElementById("t").value = ta;
+            var da = x * 20 / 100;
+            document.getElementById("d").value = da;
+            var hra = x * 50 / 100;
+            document.getElementById("h").value = hra;
+            var pf = x * 8 / 100;
+            document.getElementById("p").value = pf;
+            var net_pay = x + ta + da + hra - pf;
+            document.getElementById("net").value = net_pay;
+        }
+    </script>
+    enter name<input type="n"><br><br> enter basic salary<input type="text" id="b"><br><br>
+    <button onclick="sal()">salary</button> <br><br> TA
+    <input type="text" id="t"> <br><br> DA
+    <input type="text" id="d"><br><br> HRA
+    <input type="text" id="h"><br><br> PF
+    <input type="text" id="p"><br><br> NET_PAY
+    <input type="text" id="net">
+
+</body>
+
+</html>

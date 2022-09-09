@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalarySlip</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <script>
+        function abc() {
+            var x = parseInt(document.getElementById("basic").value);
+
+            var pf = (x * 15) / 100;
+            document.getElementById("pf").value = pf;
+
+            var da = (x * 16) / 100;
+            document.getElementById("da").value = da;
+
+            var esi = (x * 3) / 100;
+            document.getElementById("esi").value = esi;
+
+            var hra = (x * 14) / 100;
+            document.getElementById("hra").value = hra;
+
+            var tds = (x * 14) / 100;
+            document.getElementById("tds").value = tds;
+
+            var wa = (x * 11) / 100;
+            document.getElementById("wa").value = wa;
+
+            var lop = (x * 14) / 100;
+            document.getElementById("lop").value = lop;
+
+            var ca = (x * 14) / 100;
+            document.getElementById("ca").value = ca;
+
+            var pt = (x * 14) / 100;
+            document.getElementById("pt").value = pt;
+
+            var cca = (x * 14) / 100;
+            document.getElementById("cca").value = cca;
+
+            var spl = (x * 14) / 100;
+            document.getElementById("spl").value = spl;
+
+            var ma = (x * 14) / 100;
+            document.getElementById("ma").value = ma;
+
+            var ewf = (x * 14) / 100;
+            document.getElementById("ewf").value = ewf;
+
+            var incentive = (x * 14) / 100;
+            document.getElementById("incentive").value = incentive;
+
+            var cd = (x * 14) / 100;
+            document.getElementById("cd").value = cd;
+
+            var leave_encashment = (x * 14) / 100;
+            document.getElementById("leave_encashment").value = leave_encashment;
+
+            var holiday_wages = (x * 14) / 100;
+            document.getElementById("holiday_wages").value = holiday_wages;
+
+            var special_allowance = (x * 14) / 100;
+            document.getElementById("special_allowance").value = special_allowance;
+
+            var bonus = (x * 14) / 100;
+            document.getElementById("bonus").value = bonus;
+
+            var individual_incentive = (x * 14) / 100;
+            document.getElementById("individual_incentive").value = individual_incentive;
+
+            var total_earning = (x * 14) / 100;
+            document.getElementById("total_earning").value = total_earning;
+
+            var total_deductions = (x * 14) / 100;
+            document.getElementById("total_deductions").value = total_deductions;
+
+            var net_pay = (x * 14) / 100;
+            document.getElementById("net_pay").value = net_pay;
+
+            var in_words = (x * 14) / 100;
+            document.getElementById("in").value = in_words;
+
+
+
+
+
+        }
+    </script>
+    <!-- <style>
+        .box {
+            width: 1000px;
+            height: 1500px;
+            border-radius: 20px;
+            background-color: black;
+            margin-top: 30px;
+            margin-left: 250px;
+        }
+    </style>-->
+    <div class="container bg-dark">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center 1h-1 mb-2">
+                    <h3 class="fw-bold text-warning mt-3">Payslip</h3><span class="fw-normal text-info fs-5">Payment slip for the month of June 2021</span>
+                    <hr/ class="w-75 text-bg-danger m-auto mt-3">
+                        <table>
+                            <div class="row">
+                                <div class="col-md-10 text-dark">
+                                    <div class="row">
+                                        <div class="col-md-6 mt-4">
+                                            <div> <span class="fw-bolder text-white ">EMP Code</span>
+                                                <input type="number" class="ms-3 "> </div>
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <div><span class="fw-bolder text-white ">EMP Name</span>
+                                                <input type="text" class="ms-3"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mt-4">
+                                                <div> <span class="fw-bolder text-white ">PF NO</span>
+                                                    <input type="number" class="ms-3 "> </div>
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <div><span class="fw-bolder text-white ">NOD</span>
+                                                    <input type="number" class="ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mt-4">
+                                                <div> <span class="fw-bolder text-white ">ESI NO</span>
+                                                    <input type="number" class="ms-3 "> </div>
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <div><span class="fw-bolder text-white ">mODE oF pAY</span>
+                                                    <input type="text" class="ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mt-4">
+                                                <div> <span class="fw-bolder text-white ">Designation </span>
+                                                    <input type="text" class="ms-3 "> </div>
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <div><span class="fw-bolder text-white ">Ac No.</span>
+                                                    <input type="number" class="ms-3">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </table>
+
+
+
+                        <table class="mt-4 table table-bordered">
+                            <thead class="bg-success text-white">
+                                <tr>
+                                    <th scope="col">Earnings</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Deductions</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-white">
+                                <tr>
+                                    <th scope="row">Basic</th>
+                                    <td>
+                                        <input type="number" id="basic">
+                                    </td>
+                                    <td> PF</td>
+                                    <td> <input type="number" id="pf"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">DA</th>
+                                    <td> <input type="number" id="da"></td>
+                                    <td> ESI</td>
+                                    <td> <input type="number" id="esi"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">HRA</th>
+                                    <td> <input type="number" id="hra"> </td>
+                                    <td> TDS</td>
+                                    <td> <input type="number" id="tds"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">WA</th>
+                                    <td> <input type="number" id="wa"></td>
+                                    <td> LOP</td>
+                                    <td> <input type="number" id="lop"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CA</th>
+                                    <td> <input type="number" id="ca"></td>
+                                    <td>PT</td>
+                                    <td><input type="number" id="pt"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CCA</th>
+                                    <td><input type="number" id="cca"> </td>
+                                    <td>SPL. Deduction</td>
+                                    <td><input type="number" id="spl"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MA</th>
+                                    <td><input type="number" id="ma"></td>
+                                    <td>EWF</td>
+                                    <td><input type="number" id="ewf"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Incentive</th>
+                                    <td><input type="number" id="incentive"></td>
+                                    <td>CD</td>
+                                    <td><input type="number" id="cd"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Leave_Encashment</th>
+                                    <td><input type="number" id="leave_encashment"></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Holiday_Wages</th>
+                                    <td><input type="number" id="holiday_wages"></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Special_Allowance</th>
+                                    <td><input type="number" id="special_allowance"></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bonus</th>
+                                    <td><input type="number" id="bonus"></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Individual_Incentive</th>
+                                    <td><input type="number" id="individual_incentive"></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr class="border-top">
+                                    <th scope="row">Total_Earning</th>
+                                    <td><input type="number" id="total_earning"></td>
+                                    <td>Total_Deductions</td>
+                                    <td><input type="number" id="total_deductions"></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <br>
+                        <span class="fw-bold fs-4 text-white" id="net_pay">Net Pay : 24528.00</span>
+
+                    </div>
+
+                    <div class="col-md-8 d-flex justify-content-start">
+                        <span class="text-warning ">In Words</span>
+                        <span>In Words</span> <span class="text-danger bg-light id=in">Twenty Five thousand nine hundred seventy only</span> </div>
+                </div>
+                <div class="col-md-8 d-flex">
+                    <button onclick="abc()">
+                         show
+                    </button>
+                    <div class="col-md-12 d-flex ">
+                        <button>
+                            reset
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+                <div class="d-flex justify-content-end text-white">
+                    <div class="d-flex flex-column mt-2">
+                        <span class="fw-bolder mb-5">For Kalyan Jewellers</span>
+                        <span class="mb-2">Authorised Signatory</span> </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- Latest compiled JavScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
