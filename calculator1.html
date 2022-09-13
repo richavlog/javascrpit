@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .shell{
+            height: 550px;
+            width: 600px;
+            background-color: blue;
+            margin-top: 100px;
+            margin-left: 400px;
+
+        }
+        .input{
+            height: 100px;
+            width: 75%;
+            border: 10px;
+            border-radius: 50px 100px;
+            border-color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .button{
+            width: 20%;
+            height: 80px;
+            background-color: white;
+            color: blue;
+            border: 5px;
+            border-color: black;
+            border-radius: 100% 50%;
+            font-size: 30px;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    </style>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+         <h1> <span class="navbar-brand text-danger mb-0 h1">Navbar</span></h1>
+
+        </div>
+      </nav>
+    <div class="shell"><br><br>
+        <tr>
+            <td><input  type="text" placeholder="0.00" id="result" class="input"></td>
+            &nbsp;&nbsp;
+      <td><input type="button" value="C" onclick="clear()" class="button"></td></tr>
+      <br><br>
+
+      <tr > &nbsp; &nbsp;  
+        <td><input type="button" value="1" onclick="dis('1')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="2" onclick="dis('2')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="3" onclick="dis('3')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="/" onclick="dis('/')" class="button"></td>
+        <br><br>
+
+
+      </tr>
+      <tr>&nbsp; &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="4" onclick="dis('4')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+            <td><input type="button" value="5" onclick="dis('5')" class="button"></td>
+            &nbsp; &nbsp;&nbsp;
+            <td><input type="button" value="6" onclick="dis('6')" class="button"></td>
+            &nbsp; &nbsp;&nbsp;
+            <td><input type="button" value="*" onclick="dis('*')" class="button"></td>
+        <br><br>
+
+      </tr>
+      <tr>
+        &nbsp; &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="7" onclick="dis('7')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="8" onclick="dis('8')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="9" onclick="dis('9')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="-" onclick="dis('-')" class="button"></td>
+      <br><br>
+      <tr>
+        &nbsp; &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="0" onclick="dis('0')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="." onclick="dis('.')" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="=" onclick="result()" class="button"></td>
+        &nbsp; &nbsp;&nbsp;
+        <td><input type="button" value="+" onclick="dis('+')" class="button"></td>
+        &nbsp;
+      </tr>
+      <br><br>
+
+    </div>
+    <script>
+        function dis(value) {
+            document.getElementById("result").value += value;
+        }
+
+        function clear() {
+            document.getElementById("result").value ="";
+        }
+
+        function result() {
+            document.getElementById("result").value = eval(document.getElementById("result").value);
+
+        }
+    </script>
+</body>
+</html>
