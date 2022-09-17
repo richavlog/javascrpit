@@ -76,6 +76,12 @@
                 <span id="passwordd"></span>
             </div>
             <div class="from-group">
+                <label>Confirm Password</label>
+                <input type="password" name="cPassword" placeholder="Enter Confirm Password"
+                class="form-control text" id="cpassword">
+                <span id="cpasswordd"></span>
+            </div>
+            <div class="from-group">
                 <label>Mobile Number</label>
                 <input type="number" name="Mobile Number" placeholder="Enter Mobile Number"
                 class="form-control text" id="mobile">
@@ -100,8 +106,8 @@
                     <span id="addresss"></span>
                 </div>
                 <div class="form-group">
-                   <input type="submit" class="btn btn-primary" value="Sumbit" onclick="validation()">
-                   <input type="reset" class="btn btn-danger" value="Reset" onclick="validation()">
+                   <input type="button" class="btn btn-primary" value="Sumbit" onclick="validation()">
+                   <input type="button" class="btn btn-danger" value="Reset" onclick="clear()">
                 </div>
 
             </div>
@@ -115,6 +121,13 @@
         </div>
     </div>
     <script type="text/javascript">
+        function clear(){
+           document.getElementById("name").value="";
+           document.getElementById("email").value="";
+            document.getElementById("password").value="";
+           document.getElementById("mobile").value="";
+           document.getElementById("address").value="";
+        }
        function validation(){
         
         
@@ -122,8 +135,11 @@
         if(name==""){
             document.getElementById("namee").innerHTML="**please enter name in the box**"
         }
-        if(name>=2 && name<=20){
+        if(name.length>=2 && name.lenght<=20){
             document.getElementById("namee").innerHTML="**please enter name between 2 to 20 charachters**"
+        }
+        if(!isNaN(name)){
+            document.getElementById("namee").innerHTML="**please enter only characters**"
         }
         
         
@@ -131,25 +147,45 @@
         if(email==""){
             document.getElementById("emaill").innerHTML="**please enter email in the box**"
         }
+        if(email.indexOf('@')<=0){
+            document.getElementById("emaill").innerHTML="**@ invalid position**"
+        }
+        if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
+            document.getElementById("emaill").innerHTML="**. invaild position**"
+        }
         
         
         
         var password=document.getElementById("password").value;
         if(password==""){
             document.getElementById("passwordd").innerHTML="**please enter password in the box**"}
-            if(password>=8){
+            if(password.length<=8){
                 document.getElementById("passwordd").innerHTML="**please enter password morethan 8 numbers in the box**"
             }
+            
+
+
+            var cpassword=document.getElementById("cpassword").value;
+        if(cpassword==""){
+            document.getElementById("cpasswordd").innerHTML="**please enter password in the box**"}
+            if(password.length<=8){
+                document.getElementById("cpasswordd").innerHTML="**please enter password morethan 8 numbers in the box**"
+            }
         
-        
+            if(password!=cpassword){
+                document.getElementById("cpasswordd").innerHTML="**password not match, please enter right password**"
+            }
         
             var mobile=document.getElementById("mobile").value;
         if(mobile==""){
-            document.getElementById("mobilee").innerHTML="**please enter mobile number in the box**"}
-            if(mobile=10){
-                document.getElementById("mobilee").innerHTML="**please enter 10 digit mobile number **"
+            document.getElementById("mobilee").innerHTML="**please enter mobile number in the box**"
+        }
+        if(mobile.length!=10){
+            document.getElementById("mobilee").innerHTML="**please enter 10 digit mobile number **"
             }
-        
+        if(isNaN(mobile)){
+            document.getElementById("mobilee").innerHTML="**please enter digits only**"
+        }
         
         
             var birth=document.getElementById("birth").value;
