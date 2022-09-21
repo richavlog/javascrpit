@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice sheet</title>
+</head>
+
+<body>
+    <style>
+        div {
+            background: Green;
+            border: 1px solid black;
+            padding: 10px;
+            width: 60%;
+            color: white;
+        }
+    </style>
+    <!--onclick event example-->
+    <button type="button" onabort="result()">result</button><br>
+    <h3 id="demo"></h3>
+    <hr/ w-100 color="red">
+
+        <!--onchange example-->
+        <select id="op" onchange="change()">
+       <option >python</option>
+       <option>java</option>
+       <option>c++</option>
+       <option>javascript</option>
+       <option>HTML</option>
+       <option>CSS</option>
+    </select>
+        <h2 id="ok"></h2>
+        <hr/ w-100 color="red">
+
+            <!--onblur event example-->
+            Email:
+            <input type="email" id="email" onblur="myFunction()">
+            <hr/ w-100 color="red">
+
+                <!--oncontextmenu event example-->
+                <div id="t" style="background-color: pink;"></div>
+                <div oncontextmenu="my()">
+                    <p>Right-click inside this box</p>
+                </div>
+                <hr/ w-100 color="red">
+
+                    <!--ondrage event example-->
+                    <h1>GeeksforGeeks</h1>
+                    <h2>ondrag event attribute</h2>
+                    <div id="geeks" ondrag="Function()">
+                        GeeksforGeeks: A computer science portal for geeks
+                    </div>
+                    <hr/ w-100 color="red">
+                        <script>
+                            function result() {
+
+                                document.getElementById('demo').innerHTML = Date();
+                            }
+
+                            function change() {
+                                var x = document.getElementById("op").value;
+                                document.getElementById('ok').innerHTML = x
+                            }
+
+                            function myFunction() {
+                                alert("Focus lost");
+                            }
+
+                            function my() {
+                                document.write("<a href='http:www.facebook.com'>dfgdf</a>");
+
+                            }
+
+                            function Function() {
+                                document.getElementById("geeks").style.fontSize = "30px";
+                                document.getElementById("geeks").style.color = "green";
+                            }
+                        </script>
+</body>
+
+</html>
